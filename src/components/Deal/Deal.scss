@@ -1,0 +1,8 @@
+@import '../../styles/colors';
+
+$module: 'Deal';
+
+.#{$module} { 
+    background: $white;
+    min-height: 500px;
+}

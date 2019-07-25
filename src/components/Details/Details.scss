@@ -1,0 +1,8 @@
+@import '../../styles/colors';
+
+$module: 'Details';
+
+.#{$module} { 
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}

@@ -1,0 +1,29 @@
+@import '../../styles/colors';
+
+$module: 'Sort';
+
+.#{$module} { 
+    li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+       
+        height: 40px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:not(.#{$module}-activeSort) { 
+            background: $white;
+            color: $navy;
+        }
+    }
+
+    &-bold {
+        font-weight: 700;
+    }
+
+    &-activeSort {
+        background: $navy;
+        color: $white;
+    }
+}

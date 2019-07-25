@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+$module: 'Button';
+
+.#{$module} { 
+    background: $yellow;
+    color: $navy;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    font-weight: 700;
+}

@@ -1,0 +1,12 @@
+$module: 'Holidays';
+
+.#{$module} { 
+    main {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-column-gap:  20px;
+        color: black;
+    }
+}
