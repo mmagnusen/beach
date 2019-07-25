@@ -3,6 +3,8 @@
 $module: 'Sort';
 
 .#{$module} { 
+    margin-block-start: 0;
+    padding-inline-start: 0;
     li {
         list-style-type: none;
         margin-bottom: 1rem;

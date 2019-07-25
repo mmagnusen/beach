@@ -1,0 +1,12 @@
+@import '../../styles/colors';
+
+$module: 'Overview';
+
+.#{$module} { 
+    padding: 1rem;
+    box-sizing: border-box;
+
+    h5 {
+        color: $navy;    
+    }
+}

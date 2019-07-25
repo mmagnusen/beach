@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+
+$module: 'OverviewToggle';
+
+.#{$module} { 
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    bottom: 3px;
+    background: $white;
+    color: $navy;
+    padding: 1rem;
+    box-sizing: border-box;
+    i {
+        margin-left: 10px;
+    }
+}

@@ -5,8 +5,13 @@ $module: 'Button';
 .#{$module} { 
     background: $yellow;
     color: $navy;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    min-width: 100px;
     border-radius: 4px;
     font-weight: 700;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }

@@ -5,4 +5,40 @@ $module: 'BookingInfo';
 .#{$module} { 
    display: flex;
    flex-direction: column;
+   padding: 1rem;
+
+   .bold {
+       font-weight: 500;
+   }
+
+   &-name {
+       color: $navy;
+       font-weight: 600;
+       margin-bottom: 0.5rem;
+   }
+
+   &-location {
+        color: $grey;
+        margin-bottom: 0.5rem;
+    }
+
+    &-group {
+        margin-bottom: 0.5rem; 
+    }
+
+    &-length {
+        margin-bottom: 0.5rem; 
+    }
+
+    &-departing {
+        margin-bottom: 0.5rem;  
+    }
+
+    &-bookTitle {
+        font-size: 0.7rem;
+    }
+
+    &-bookPrice {
+        font-size: 1rem;
+    }
 }

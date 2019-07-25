@@ -1,12 +1,15 @@
 import React from 'react';
 import beach from '../../assets/hotel-image-1.png';
-import { BookingInfo } from '../';
+import { BookingInfo, OverviewToggle } from '../';
 import './Details.scss';
 
-const Details = ({ title, location, stars, group, date, duration, departingFrom, price, image, }) => (
+const Details = ({ hotelName, location, stars, group, date, duration, departingFrom, price, image, toggleOverview, overviewToggled }) => (
     <div className='Details'>
-        <img src={beach} alt='holiday hotel'/>
-        <BookingInfo title={title} location={location} stars={stars} group={group} date={date} duration={duration} departingFrom={departingFrom} price={price}/>
+        <div className='Details-imageToggle'>
+            <img src={beach} alt='holiday hotel'/>
+            <OverviewToggle toggleOverview={toggleOverview} overviewToggled={overviewToggled} />
+        </div>
+        <BookingInfo hotelName={hotelName} location={location} stars={stars} group={group} date={date} duration={duration} departingFrom={departingFrom} price={price}/>
     </div>
 );
 

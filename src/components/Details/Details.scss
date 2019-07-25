@@ -1,8 +1,29 @@
 @import '../../styles/colors';
+@import '../../styles/breakpoints';
 
 $module: 'Details';
 
 .#{$module} { 
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $tabletBreakpoint) {
+    grid-template-columns: 1fr 300px;
+  }
+  @media screen and (min-width: $computerBreakpoint) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &-imageToggle {
+
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;  
+    }
+
+    .OverviewToggle {
+      position: absolute;
+    }
+  }
 }
