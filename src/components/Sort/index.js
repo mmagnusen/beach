@@ -21,7 +21,8 @@ const Sort = ({ options, activeSort, sortBy }) => (
                 {`sort ${option.addJoiner ? 'by' : ''}`}
                 <span className='Sort-bold'>{option.name}</span>
                 <i className={option.icon} />
-            </li>)}
+            </li>
+        )}
     </ul>
 );
 
