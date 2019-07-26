@@ -25,6 +25,12 @@ Things we like:
 ![](design.png)
 
 # To run project locally:
-- clone project: git@github.com:mmagnusen/beach.git
+- clone project: `git@github.com:mmagnusen/beach.git`
+- npm install
 - npm start
+
+
+# additional dependencies:
+- https://www.npmjs.com/package/classnames - allows dynamic additional of classes to html elements
+- node sass - for sass styles
 
