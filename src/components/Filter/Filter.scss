@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+
+$module: 'Filter';
+
+.#{$module} { 
+    background: $white;
+    padding: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    &-airport {
+        margin-bottom: 1rem;
+    }
+}

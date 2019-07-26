@@ -1,11 +1,10 @@
 import React from 'react';
+import { range } from '../utils';
+import './Rating.scss';
 
-const displayStars = (star) => {
-
-}
-const Rating = ({ stars }) => {
-    return Array(stars).map(() => <i className="fas fa-star" />)
-};
+const Rating = ({ stars }) => (
+    <div className='Rating'>{range(stars).map((index) => <i key={index} className="fas fa-star yellow" />)}</div>
+);
 
 export default Rating;
 

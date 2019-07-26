@@ -5,15 +5,21 @@ $module: 'Sort';
 .#{$module} { 
     margin-block-start: 0;
     padding-inline-start: 0;
+
+    &-applyBottomBorder {
+        border-bottom: 2px solid $grey;
+    }
+
     li {
         list-style-type: none;
-        margin-bottom: 1rem;
-       
-        height: 40px;
+        height: 50px;
         width: 100%;
-        padding: 10px;
+        padding: 10px 20px;
         box-sizing: border-box;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
         &:not(.#{$module}-activeSort) { 
             background: $white;
             color: $navy;
@@ -22,10 +28,17 @@ $module: 'Sort';
 
     &-bold {
         font-weight: 700;
+        margin-left: 0.5rem;
     }
 
     &-activeSort {
         background: $navy;
         color: $white;
+    }
+
+    i {
+        position: absolute;
+        right: 20px;
+        color: $lightGrey;
     }
 }

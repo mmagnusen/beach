@@ -3,7 +3,7 @@ import { Deal } from './../';
 
 const Deals = ({ deals }) => (
     <div>
-        {deals.map(deal => <Deal key={deal.title} deal={deal} />)}
+        {deals.map((deal, index) => <Deal key={index} deal={deal} />)}
     </div>
 );
 
