@@ -16,9 +16,22 @@ class Deal extends Component {
     render() {
         const { hotelName, location, stars, group, date, duration, airport, price, image, overview } = this.props.deal;
         const { overviewToggled } = this.state;
+
         return (
             <div className='Deal'>
-                <Details hotelName={hotelName} location={location} stars={stars} group={group} date={date} duration={duration} airport={airport} price={price} image={image} toggleOverview={this.toggleOverview} overviewToggled={overviewToggled} />
+                <Details 
+                    hotelName={hotelName} 
+                    location={location} 
+                    stars={stars} 
+                    group={group} 
+                    date={date} 
+                    duration={duration} 
+                    airport={airport} 
+                    price={price} 
+                    image={image} 
+                    toggleOverview={this.toggleOverview} 
+                    overviewToggled={overviewToggled} 
+                />
                 {overview && overviewToggled && <Overview overview={overview} />}
             </div>
         )

@@ -9,6 +9,7 @@ $module: 'BookingInfo';
 
    .bold {
        font-weight: 500;
+       color: $absoluteBlack;
    }
 
    &-name {
@@ -22,16 +23,10 @@ $module: 'BookingInfo';
         margin-bottom: 0.9rem;
     }
 
-    &-group {
-        margin-bottom: 0.5rem; 
-    }
-
-    &-length {
-        margin-bottom: 0.5rem; 
-    }
-
+    &-group,
+    &-length,
     &-departing {
-        margin-bottom: 0.5rem;  
+        margin-bottom: 0.9rem; 
     }
 
     &-bookTitle {

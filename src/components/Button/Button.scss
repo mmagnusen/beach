@@ -3,8 +3,6 @@
 $module: 'Button';
 
 .#{$module} { 
-    background: $yellow;
-    color: $navy;
     height: 60px;
     min-width: 100px;
     border-radius: 4px;
@@ -14,4 +12,18 @@ $module: 'Button';
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    cursor: pointer;
+
+    &.cta {
+        background: $yellow;
+        color: $navy;
+    }
+
+    &.reset {
+        color: $white;
+        background: $navy;
+        width: 100%;
+        height: 40px;
+        font-size: 0.9rem;
+    }
 }

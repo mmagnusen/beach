@@ -1,11 +1,17 @@
 @import '../../styles/colors';
 
-$module: 'Filter';
+$module: 'Select';
 
 .#{$module} { 
     background: $white;
-    padding: 1rem;
     margin-bottom: 2rem;
+    width: 170px;
+    cursor: pointer;
+    height: 40px;
+    display: block;
+    font-size: 1rem;
+    color: $black;
+    border: 1px solid $lightGrey;
 
     label {
         display: block;

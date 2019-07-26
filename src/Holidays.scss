@@ -6,6 +6,7 @@ $module: 'Holidays';
 .#{$module} { 
     padding: 3rem 0;
     box-sizing: border-box;
+    min-height: 1200px;
     main {
         width: 90%;
         margin: 0 auto;
@@ -28,7 +29,7 @@ body {
     margin: 0;
 }
 
-h4, p {
+h4, h5, p {
     margin: 0;
     padding: 0;
 }

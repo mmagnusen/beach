@@ -1,5 +1,4 @@
 @import '../../styles/colors';
-@import '../../styles/breakpoints';
 
 $module: 'OverviewToggle';
 
@@ -7,7 +6,7 @@ $module: 'OverviewToggle';
     cursor: pointer;
     display: flex;
     position: absolute;
-    bottom: 3px;
+    bottom: 0px;
     background: $white;
     color: $navy;
     padding: 1rem;

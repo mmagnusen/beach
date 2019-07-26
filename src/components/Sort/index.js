@@ -3,8 +3,8 @@ import Classnames from 'classnames';
 import './Sort.scss';
 
 const shouldApplyBorder = (options, activeSort, option) => {
-    const indexOfActiveSort = options.indexOf(activeSort);
-    const idexOfOption = options.indexOf(option);
+    const indexOfActiveSort = options.indexOf(options.find(option => option.name === activeSort));
+    const idexOfOption = options.indexOf(options.find(currentOption => currentOption.name === option.name));    
     return indexOfActiveSort !== idexOfOption && idexOfOption !== options.length - 1 && idexOfOption !== indexOfActiveSort  - 1;
 };
 

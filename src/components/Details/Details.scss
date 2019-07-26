@@ -6,6 +6,7 @@ $module: 'Details';
 .#{$module} { 
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 300px auto;
   @media screen and (min-width: $tabletBreakpoint) {
     grid-template-columns: 1fr 300px;
   }
@@ -14,14 +15,8 @@ $module: 'Details';
   }
 
   &-imageToggle {
-
     position: relative;
-    img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;  
-    }
-
+    height: 100%;
     .OverviewToggle {
       position: absolute;
     }

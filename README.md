@@ -1,6 +1,6 @@
 # On the Beach Frontend Software Engineer code test
 
-Produce a HTML, CSS and JavaScript representation of the given `design.png` with the following features:
+Produce an HTML, CSS and JavaScript representation of the given `design.png` file with the following features:
 
 - Sort the results by price (this should be the default)
 - Sort the results by star rating and highlight when active
@@ -23,3 +23,8 @@ Things we like:
 - Clean error free JavaScript
 
 ![](design.png)
+
+# To run project locally:
+- clone project: git@github.com:mmagnusen/beach.git
+- npm start
+
